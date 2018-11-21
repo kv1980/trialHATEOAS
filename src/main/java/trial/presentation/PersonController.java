@@ -43,4 +43,10 @@ public class PersonController {
         PersonResourceExtended personResource = assembler.toExtendedResource(person);
         return new ResponseEntity<PersonResourceExtended>(personResource, HttpStatus.OK);
     }
+
+    @ExceptionHandler(PersonNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    String personNotFound() {
+        return "A person with this UUID was not found.";
+    }
 }
