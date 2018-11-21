@@ -1,0 +1,8 @@
+trial\domain\exceptions\PersonNotFoundException.class
+trial\domain\Person.class
+trial\domain\PersonService.class
+trial\presentation\PersonController.class
+trial\presentation\PersonResourceConcise.class
+trial\presentation\PersonResourceExtended.class
+trial\presentation\PersonResourceAssembler.class
+trial\Application.class
